@@ -1,0 +1,30 @@
+# --- Core & Data Engineering ---
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl          # Czasami potrzebne do zapisu/odczytu formatów Excelowych
+python-dotenv     # Do bezpiecznego zarządzania zmiennymi środowiskowymi (np. kluczami API)
+
+# --- Data Acquisition ---
+kaggle            # Do pobrania datasetu bezpośrednio ze skryptu
+
+# --- Visualization & EDA ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0    # Interaktywne wykresy (świetne do szeregów czasowych)
+
+# --- Machine Learning & Stats ---
+scikit-learn>=1.2.0
+statsmodels>=0.14.0  # Do dekompozycji szeregów czasowych i testów statystycznych
+lightgbm>=4.0.0      # Twój główny model gradient boosting
+prophet>=1.1.0       # Model bazowy od Meta (Time Series)
+
+# --- MLOps & Tracking ---
+mlflow>=2.3.0     # Do logowania parametrów modeli i metryk
+
+# --- App Framework (Optional) ---
+streamlit>=1.22.0 # Jeśli będziesz chciał zrobić szybkie demo parametrów
+
+# --- Development Tools ---
+jupyter           # Do uruchamiania notebooków
+ipykernel         # Kernel dla Jupytera
+black             # (Opcjonalnie) Formatter kodu, żeby zachować czystość (PEP8)

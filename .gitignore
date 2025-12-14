@@ -1,0 +1,40 @@
+# --- Python & Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# --- Data Science & Datasets ---
+# Ignorujemy całą zawartość folderów z danymi, bo są duże
+# i można je odtworzyć skryptami.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- MLflow & Models ---
+# Logi eksperymentów bywają ogromne (tysiące małych plików)
+mlruns/
+# Ewentualne zapisane modele binary
+*.pkl
+*.joblib
+*.model
+
+# --- Power BI ---
+# Ignorujemy pliki tymczasowe i backupy Power BI,
+# ale właściwy raport (.pbix) w reports/ chcemy zazwyczaj commitować,
+# chyba że przekroczy 100MB (limit GitHuba).
+*.pbix.lock
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
