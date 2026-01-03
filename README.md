@@ -24,13 +24,14 @@ The solution follows a modular architecture, separating the forecasting engine f
 
 ```mermaid
 graph LR
-    A[Raw Data\n(Kaggle API)] -->|ETL Process| B(Data Cleaning & Feature Eng.)
-    B --> C{Model Training}
-    C -->|Baseline| D[Prophet]
-    C -->|Champion| E[LightGBM]
-    D & E --> F[MLflow Tracking]
-    E -->|Predictions| G[final_forecasts.csv]
-    G --> H[Power BI Dashboard]
+    A["Raw Data\n(Kaggle API)"] -->|ETL & Cleaning| B[Processed Data]
+    B -->|Feature Eng.| C[Model Training\n(LightGBM)]
+    C -->|Predictions| D[Power BI Dashboard]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style D fill:#fbf,stroke:#333,stroke-width:4px
 
 🛠️ Tech Stack
 Core & Analysis
