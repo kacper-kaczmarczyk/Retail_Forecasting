@@ -25,7 +25,7 @@ The solution follows a modular architecture, separating the forecasting engine f
 ```mermaid
 graph LR
     A["Raw Data\n(Kaggle API)"] -->|ETL & Cleaning| B[Processed Data]
-    B -->|Feature Eng.| C[Model Training\n(LightGBM)]
+    B -->|Feature Eng.| C["Model Training\n(LightGBM)"]
     C -->|Predictions| D[Power BI Dashboard]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
