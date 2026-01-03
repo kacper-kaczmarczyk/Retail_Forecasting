@@ -27,12 +27,12 @@ graph LR
     A["Raw Data\n(Kaggle API)"] -->|ETL & Cleaning| B[Processed Data]
     B -->|Feature Eng.| C["Model Training\n(LightGBM)"]
     C -->|Predictions| D[Power BI Dashboard]
-    
+ 
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style C fill:#bfb,stroke:#333,stroke-width:2px
     style D fill:#fbf,stroke:#333,stroke-width:4px
-
+```
 🛠️ Tech Stack
 Core & Analysis
 - Python 3.10+: Main programming language.
