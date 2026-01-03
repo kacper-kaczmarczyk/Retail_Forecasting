@@ -92,21 +92,35 @@ python src/00_setup_toy_data.py
 - Environment config, Kaggle API integration.
 - "Toy Data" generation for BI pipeline testing.
 
-[ ] Phase 2: Exploratory Data Analysis (EDA)
+[x] Phase 2: Exploratory Data Analysis (EDA)
 - Seasonality detection, promotion impact analysis.
 
-[ ] Phase 3: Modeling
+[x] Phase 3: Modeling
 - Baseline (Prophet) vs. Advanced (LightGBM).
 - Feature Engineering (Lags, Rolling windows, Holidays).
 - Hyperparameter tuning & MLflow tracking.
 
-[ ] Phase 4: Dashboarding
+[x] Phase 4: Dashboarding
 - Power BI report implementation (Sales vs Forecast, Anomalies).
 
-[ ] Phase 5: Final Evaluation
+[x] Phase 5: Final Evaluation
 - Business impact summary and documentation.
 
-📊 Results (Sneak Peek)
+## 📊 Results: Executive Dashboard
+
+The final output is an interactive Power BI dashboard designed for store managers and supply chain executives.
+
+![Power BI Dashboard](reports/dashboard_final.png)
+
+### Key Insights Delivered:
+* **High-Precision Forecasting:** The global LightGBM model achieved a Weighted Mean Absolute Percentage Error (WMAPE) of just **12.7%**, significantly outperforming baseline models. Major product categories like 'PRODUCE' and 'GROCERY I' show even higher accuracy (errors under 10%).
+* **Promotional Impact Verified:** Analysis confirmed a strong positive correlation between active promotions and average daily sales volume, validating marketing effectiveness (see the "Impact of Promo Count" chart).
+* **Granular Error Tracking:** The interactive matrix allows immediate identification of high-variance categories (e.g., niche items like 'BOOKS') versus stable, predictable, high-volume sellers.
+
+### How to run the dashboard:
+1.  Ensure you have run the Python pipeline to generate `data/processed/final_forecasts.csv`.
+2.  Open the `reports/Retail_Demand_Forecast_v1.0.pbix` file in Power BI Desktop.
+3.  Click "Refresh" to load the latest predictions.
 
 
 📝 License
