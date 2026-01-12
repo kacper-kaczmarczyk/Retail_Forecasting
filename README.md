@@ -49,7 +49,7 @@ Business Intelligence
 - Microsoft Power BI: Interactive dashboard for stakeholders.
 - DAX: Custom measures for WoW (Week-over-Week) growth and forecast accuracy.
 
-📂 Project Structure
+```text
 retail-forecasting/
 ├── data/
 │   ├── raw/            # Raw data from Kaggle (immutable)
@@ -62,6 +62,7 @@ retail-forecasting/
 ├── mlruns/             # MLflow local tracking logs
 ├── requirements.txt    # Project dependencies
 └── README.md           # Project documentation
+```
 
 🚀 Getting Started
 1. Prerequisites
