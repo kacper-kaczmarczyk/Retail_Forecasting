@@ -50,6 +50,7 @@ Business Intelligence
 - DAX: Custom measures for WoW (Week-over-Week) growth and forecast accuracy.
 
 ```text
+📂 Project Structure
 retail-forecasting/
 ├── data/
 │   ├── raw/            # Raw data from Kaggle (immutable)
