@@ -71,7 +71,7 @@ Power BI Desktop (for viewing the dashboard)
 
 2. Installation
 Clone the repository and install dependencies:
-git clone [https://github.com/YOUR_USERNAME/retail-forecasting.git](https://github.com/YOUR_USERNAME/retail-forecasting.git)
+git clone [https://github.com/kacper-kaczmarczyk/retail-forecasting.git](https://github.com/kacper-kaczmarczyk/retail-forecasting.git)
 cd retail-forecasting
 
 # Create virtual environment
